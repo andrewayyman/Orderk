@@ -51,7 +51,22 @@ Phase 2 marked the transition from design to implementation, where the team tran
      
 3. **Admin Dashboard**
    - All admin dashboard (3 pages) full functionality and the ability to manage restaurants (View,Add,Delete) and manage customers.
-     
+
 4. **Documentation Update:**
   - Maintained comprehensive documentation, updating it to reflect any changes made during the implementation phase.
+  
+
+  ## Screeenshots : 
+  ![image](https://github.com/andrewayyman/SW1Project_Orderk/assets/88544133/b7363414-9514-42f7-a352-ec55cf590d45)
+  
+  ![image](https://github.com/andrewayyman/SW1Project_Orderk/assets/88544133/8f9a9165-2c4e-4664-ad55-c0cac07fd645)
+
+  ![image](https://github.com/andrewayyman/SW1Project_Orderk/assets/88544133/6cc25cad-f6fc-4859-967e-86b7eacd18a4)
+
+
+  ![image](https://github.com/andrewayyman/SW1Project_Orderk/assets/88544133/169c63dc-1b1a-4c5d-a20e-7b21a00c0474)
+
+
+     
+
 
