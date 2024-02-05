@@ -2,7 +2,9 @@
 This project represents an online food delivery service, developed as a team project during the second year at the Faculty of Computer Science and Artificial Intelligence, Helwan University (FCAIH). As the team leader, my assigned responsibilities included defining requirements and design class and objects diagrams and gather the tasks for the documentation (Phase 1 ) and implementing the home page (Header,Footer), the About Us page, and the Admin Dashboard from the implementation task (Phase2).
 
 
-**This project is designed to utilize PHP and MySQL. While we had the flexibility to choose any frontend template, we opted to employ the frontend template that we had previously designed in the preceding year.**
+**This project is designed to utilize PHP and MySQL. While we had the flexibility to choose any frontend template, we opted to employ the frontend template that we had previously designed in the preceding year.**      
+-**To login as an admin** => email = andrew@gmail.com , password= 1234    
+-**To login as a customer** => email = mody@gmail.com , password = 1234    
 
 ## Phase 1: Pre-Implementation Design
 
