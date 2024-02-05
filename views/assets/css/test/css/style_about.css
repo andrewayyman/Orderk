@@ -1,0 +1,521 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --maincolor: #009688;
+    --seccolor: white;
+    --hovercolor: gainsboro;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+
+
+}
+
+/* Header */
+
+.header {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    background-color: var(--maincolor);
+    height: 105px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: transparent;
+
+
+}
+
+.logo img {
+
+    height: 120px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 200px;
+
+
+}
+
+.container nav ul {
+    display: flex;
+
+}
+
+.search {
+    color: var(--seccolor);
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-left: 30px;
+    border-left: 1px solid var(--seccolor);
+
+}
+
+.search i {
+    color: var(--seccolor);
+    position: absolute;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+}
+
+.search i:hover {
+    color: var(--hovercolor);
+}
+
+.shopping i {
+    color: var(--seccolor);
+    padding-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.shopping i:hover {
+    color: var(--hovercolor);
+}
+
+.user i {
+    color: var(--seccolor);
+    padding-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    padding-right: 20px;
+    font-size: 22px;
+
+}
+
+.user i:hover {
+    color: var(--hovercolor);
+}
+
+
+
+.sign a {
+
+    text-decoration: none;
+    color: var(--seccolor);
+    font-weight: bold;
+}
+
+.sign a:hover {
+    color: var(--hovercolor);
+}
+
+.log {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+.container nav ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.container nav ul li a {
+    display: block;
+    color: var(--seccolor);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container nav ul li::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--hovercolor);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+
+.container nav ul li:hover::after {
+    width: 100%;
+}
+
+
+/* End of header */
+/* about */
+
+.about {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--seccolor);
+}
+
+.container1 {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.content {
+
+    float: left;
+    width: 55%;
+}
+
+.content .title {
+    text-transform: uppercase;
+    font-size: 28px;
+    color: var(--maincolor);
+}
+
+.content .title h3 {
+    margin-top: 20px;
+
+}
+
+.content .info h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+
+}
+
+.content .info p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.content .info .button {
+
+    margin-top: 30px;
+
+}
+
+
+.content .info .button a {
+    padding: 12px 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    border: 2px solid var(--maincolor);
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.content .info .button a span {
+    background: var(--maincolor);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.content .info .button a:hover span {
+    width: 100%;
+
+}
+
+.content .info .button a:hover {
+    border: none;
+
+}
+
+
+
+.about .container1 .social .facebook:hover {
+    background-color: dodgerblue;
+}
+
+.about .container1 .social .youtube:hover {
+    background-color: red;
+}
+
+.about .container1 .social .twitter:hover {
+    background-color: lightskyblue;
+}
+
+.about .container1 .social {
+    display: flex;
+
+}
+
+.about .container1 .social li {
+    margin-right: 10px;
+    margin-top: 50px;
+
+
+}
+
+.about .container1 .social li a {
+    background-color: #191919;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: var(--seccolor);
+}
+
+.imageabout {
+    float: right;
+    width: 30%;
+}
+
+.imageabout img {
+    width: 100%;
+    height: auto;
+}
+
+/* about */
+/* Team Members */
+
+.teamtitle {
+    margin: 0 auto 80px;
+    padding: 10px 20px;
+    border: 2px solid var(--maincolor);
+    font-size: 30px;
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.teamtitle span {
+    background: var(--maincolor);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.teamtitle:hover span {
+    width: 100%;
+
+}
+
+.teamtitle:hover {
+    border: none;
+}
+
+
+
+
+
+.team {
+    padding: 100px;
+    position: relative;
+    background-color: #ececec;
+}
+
+.team .container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.team .box {
+    padding: 20px;
+    background-color: var(--seccolor);
+    border-radius: 6px;
+    position: relative;
+    border-radius: 6px;
+
+
+}
+
+.team .box img {
+    width: 100%;
+    position: absolute;
+    right: -10px;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.team .box h3 {
+    margin-bottom: 10px;
+    color: var(--maincolor);
+}
+
+.team .box .title {
+    color: #777;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.team .box .rate {
+    color: #ebeb1b;
+}
+
+.team .box p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #777;
+}
+
+.team .box p span {
+    color: var(--maincolor);
+}
+
+.tasks {
+    text-decoration: none;
+    color: black;
+}
+
+.tasks:hover {
+    color: var(--maincolor);
+}
+
+/*End of Team Members */
+
+/* Start footer */
+
+.footer {
+    background-color: #191919;
+    padding: 10px 0 0;
+
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+
+}
+
+.footer .container h3 {
+    color: #009688;
+
+}
+
+.footer .container img {
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    margin: 0 0 20px;
+
+
+}
+
+.footer .container .social {
+    display: flex;
+}
+
+.footer .container .social li {
+    margin-right: 10px;
+}
+
+.footer .container .social li a {
+    background-color: #313131;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #b9b9b9;
+}
+
+.footer .container .social .facebook:hover {
+    background-color: dodgerblue;
+}
+
+.footer .container .social .youtube:hover {
+    background-color: red;
+}
+
+.footer .container .social .twitter:hover {
+    background-color: lightskyblue;
+}
+
+.footer .box .text {
+    line-height: 2;
+    color: #b9b9b9;
+
+}
+
+.footer .box .ficons li {
+    padding: 15px 0;
+    transition: 0.5s;
+
+}
+
+.footer .box .ficons li:not(:last-child) {
+    border-bottom: 1px solid #444;
+}
+
+.footer .box .ficons li:hover {
+    padding-left: 10px;
+}
+
+.footer .box .ficons li a {
+    text-decoration: none;
+    color: #b9b9b9;
+    transition: 0.5s;
+
+}
+
+.footer .box .ficons li:hover a {
+    color: var(--seccolor);
+}
+
+.footer .copyright {
+    padding: 15px 0;
+    text-align: center;
+    color: var(--seccolor);
+    margin: 50px 0 0;
+    border-top: 1px solid #444;
+
+}
+
+
+
+/* End footer */
