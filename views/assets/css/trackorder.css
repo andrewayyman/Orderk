@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --maincolor: #191919;
+    --hovercolor: gainsboro;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    background-color: var(--maincolor);
+    height: 105px;
+
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: transparent;
+
+}
+
+.logo img {
+   
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+  
+}
+
+ul {
+    list-style: none;
+}
+
+.container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 200px;
+
+
+
+}
+
+.container nav ul {
+    display: flex;
+
+}
+
+.search {
+    color: white;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-left: 30px;
+    border-left: 1px solid white;
+
+}
+
+.search i {
+    color: white;
+    position: absolute;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+}
+
+.search i:hover {
+    color: var(--hovercolor);
+}
+
+.shopping i {
+    color: white;
+    padding-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.shopping i:hover {
+    color: var(--hovercolor);
+}
+
+.user i {
+    color: white;
+    padding-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    padding-right: 20px;
+    font-size: 22px;
+
+}
+
+.user i:hover {
+    color: gainsboro;
+}
+
+
+
+.sign a {
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.sign a:hover {
+    color: var(--hovercolor);
+}
+
+.log {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+.container nav ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.container nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container nav ul li::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--hovercolor);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+
+.container nav ul li:hover::after {
+    width: 100%;
+}
+
+
+/* End of header */
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #191919;
+    padding: 0%;
+    }
+table { 
+	width: 750px; 
+	border-collapse: collapse; 
+	margin: auto;
+    margin-top: 20px;
+	
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+
+th { 
+	background: #4d50c2; 
+	color: white; 
+	font-weight: bold; 
+	
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 14px;
+	
+	}
+
+/* 
+/* Start footer */
+
+.footer {
+    background-color: #191919;
+    padding: 10px ;
+    margin-top: 140;
+
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+
+}
+
+.footer .container h3 {
+    color: #4d50c2;
+
+}
+
+.footer .container img {
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    margin: 0 0 20px;
+
+
+}
+
+.footer .container .social {
+    display: flex;
+}
+
+.footer .container .social li {
+    margin-right: 10px;
+}
+
+.footer .container .social li a {
+    background-color: #313131;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #b9b9b9;
+}
+
+.footer .container .social .facebook:hover {
+    background-color: dodgerblue;
+}
+
+.footer .container .social .youtube:hover {
+    background-color: red;
+}
+
+.footer .container .social .twitter:hover {
+    background-color: lightskyblue;
+}
+
+.footer .box .text {
+    line-height: 2;
+    color: #b9b9b9;
+
+}
+
+.footer .box .ficons li {
+    padding: 15px 0;
+    transition: 0.5s;
+
+}
+
+.footer .box .ficons li:not(:last-child) {
+    border-bottom: 1px solid #444;
+}
+
+.footer .box .ficons li:hover {
+    padding-left: 10px;
+}
+
+.footer .box .ficons li a {
+    text-decoration: none;
+    color: #b9b9b9;
+    transition: 0.5s;
+
+}
+
+.footer .box .ficons li:hover a {
+    color: white;
+}
+
+.footer .copyright {
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    margin: 50px 0 0;
+    border-top: 1px solid #444;
+
+}
+
+
+
+/* End footer */
+
+
+/* end of home page */
