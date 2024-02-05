@@ -65,8 +65,8 @@ Phase 2 marked the transition from design to implementation, where the team tran
 
   ![image](https://github.com/andrewayyman/SW1Project_Orderk/assets/88544133/6cc25cad-f6fc-4859-967e-86b7eacd18a4)
 
+  ![image](https://github.com/andrewayyman/SW1Project_Orderk/assets/88544133/0693ac18-1629-45c0-aedf-bca9b100de6f)
 
-  ![image](https://github.com/andrewayyman/SW1Project_Orderk/assets/88544133/169c63dc-1b1a-4c5d-a20e-7b21a00c0474)
 
 
      
